@@ -1,6 +1,13 @@
 resource "aws_iam_policy" "users_register_policy" {
   name = "${var.environment}-users-register-policy"
 
+  policy = templatefile("${path.module}/templates/dynamodb-policy.tpl", {
+    action   = "dynamodb:PutItem",
+    resource = "${aws_dynamodb_table.users.arn}"
+  })
+
+
+  /*
   policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -24,4 +31,6 @@ resource "aws_iam_policy" "users_register_policy" {
    ]
 }
 EOF
+
+*/
 }
