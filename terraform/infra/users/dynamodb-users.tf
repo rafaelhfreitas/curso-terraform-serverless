@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "users" {
-  name     = "${var.envoirnment}-users"
+  name     = "${var.environment}-users"
   hash_key = "id"
   attribute {
     name = "id"
