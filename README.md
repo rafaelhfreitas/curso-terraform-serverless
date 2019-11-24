@@ -10,3 +10,4 @@ Stack:
      - SQS 
      - DynamoDB 
      - S3 
+     - Systems Manager
