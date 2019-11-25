@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"users","Source":"../../infra/users","Dir":"../../infra/users"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"users","Source":"../../infra/users","Dir":"../../infra/users"},{"Key":"bookings","Source":"../../infra/bookings","Dir":"../../infra/bookings"}]}
